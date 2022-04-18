@@ -21,6 +21,22 @@ header
             .cv
                 border-left: 1px solid $lightblue
                 padding-left: 25px
+            .deroulant
+                &:hover ul
+                    z-index: 99999
+                    display: list-item
+                    position: absolute
+                    margin-top: 5px
+                    margin-left: -10px
+                    li
+                        float: none
+                        background-color: $lightdark
+                        width: 200px
+                        margin: 5px
+                        padding-left: 10px
+                ul
+                    display: none // Rend le menu déroulant caché par défaut
+
         .connexion // creation d'un cadre autour du bouton de connexion
             border: 1px solid $yellow
             border-radius: 5px
