@@ -7,15 +7,13 @@ header
             max-width: 50%
     nav // Alignement de la <ul> et du <a> de connexion
         @extend %center-component
-        display: flex
-        justify-content: space-between
+        @extend %flex-space-between
         a
             color: $lightblue
         ul // la liste fait la moitié de la taille du nav
-            display: flex
-            justify-content: space-between
+            @extend %flex-space-between
             list-style-type: none
-            width: $ecran / 2
+            @extend %half-ecran-width
             li
                 padding: 0
                 a:hover

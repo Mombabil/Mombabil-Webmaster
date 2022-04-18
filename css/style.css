@@ -9,20 +9,63 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* Variables / Tools */
 /* Couleurs : */
 /* Polices */
 /* FLux : */
 /* Tailles : */
 /* Typo : */
-header .logo, header nav {
+header nav, header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo, header nav, .presentation {
   width: 1200px;
   margin: auto;
 }
 
+header nav ul, .presentation .explication, .presentation .navigation {
+  width: 600px;
+}
+
 /* General */
-* {
+body {
   font-family: helvetica, sans sans-serif;
+  background: #CFDBD5;
 }
 
 /* Layout */
@@ -36,28 +79,12 @@ header .logo img {
   max-width: 50%;
 }
 
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 header nav a {
-  color: #cfdbd5;
+  color: #CFDBD5;
 }
 
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   list-style-type: none;
-  width: 600px;
 }
 
 header nav ul li {
@@ -69,7 +96,7 @@ header nav ul li a:hover {
 }
 
 header nav ul .cv {
-  border-left: 1px solid #cfdbd5;
+  border-left: 1px solid #CFDBD5;
   padding-left: 25px;
 }
 
@@ -92,7 +119,22 @@ header nav .connexion:hover {
   width: 100%;
 }
 
-* {
-  font-family: helvetica;
+.presentation {
+  padding: 50px 0 50px 0;
+}
+
+.presentation .explication {
+  text-align: justify;
+  font-size: 1.5rem;
+  background-color: #333533;
+  color: #EEE6D8;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.presentation .explication h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,27 @@
-%flex-center-sass
+%flex-space-between
+    display: flex
+    justify-content: space-between
+
+%flex-center
     display: flex
     justify-content: center
+    align-items: center
+
+%flex-column-center
+    display: flex
+    flex-direction: column
     align-items: center
 
 %center-component
     width: $ecran
     margin: auto
+
+%half-ecran-width
+    width: $ecran / 2
+
+%half-tablet-width
+    width: $tablet / 2
+
+%half-phone-width
+    width: $phone / 2
+
