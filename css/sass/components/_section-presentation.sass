@@ -1,22 +1,40 @@
 .presentation
     @extend %center-component
-    @extend %flex-center
+    @extend %flex-column-center
     padding: 50px 0 50px 0 //padding haut et bas de 50px
+    border-bottom: 1px solid grey
 
     .explication
         text-align: justify
-        @extend %half-ecran-width
         font-size: 1.5rem
         background-color: $lightdark
         color: $lightbeige
         padding: 25px
         border-radius: 5px
+        margin-bottom: 25px
         h2
             text-align: center
             font-size: 2rem
             margin-bottom: 25px
     .navigation
-        @extend %half-ecran-width
+        @extend %center-component
         ul
-            @extend %flex-column-center
-
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            li
+                +circle(200px)
+                background-color: $lightbeige
+                margin: 45px
+                border: 1px solid $lightdark
+                a
+                    +circle(200px)
+                    @extend %flex-center
+                    display: flex
+                    flex-direction: column
+                    &:hover
+                        background-color: $yellow
+                        transition: 0.3s ease-in-out
+                    span
+                        margin: 10px
+                        font-size: 1.5rem

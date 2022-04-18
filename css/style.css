@@ -28,7 +28,7 @@ header nav, header nav ul {
           justify-content: space-between;
 }
 
-.presentation {
+.presentation .navigation ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ header nav, header nav ul {
           align-items: center;
 }
 
-.presentation .navigation ul {
+.presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,12 +53,12 @@ header nav, header nav ul {
           align-items: center;
 }
 
-header .logo, header nav, .presentation {
+header .logo, header nav, .presentation, .presentation .navigation {
   width: 1200px;
   margin: auto;
 }
 
-header nav ul, .presentation .explication, .presentation .navigation {
+header nav ul {
   width: 600px;
 }
 
@@ -116,11 +116,12 @@ header nav .connexion:hover {
 }
 
 .index img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .presentation {
   padding: 50px 0 50px 0;
+  border-bottom: 1px solid grey;
 }
 
 .presentation .explication {
@@ -130,11 +131,56 @@ header nav .connexion:hover {
   color: #EEE6D8;
   padding: 25px;
   border-radius: 5px;
+  margin-bottom: 25px;
 }
 
 .presentation .explication h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 25px;
+}
+
+.presentation .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.presentation .navigation ul li {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #EEE6D8;
+  margin: 45px;
+  border: 1px solid #333533;
+}
+
+.presentation .navigation ul li a {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.presentation .navigation ul li a:hover {
+  background-color: #f5cb5c;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.presentation .navigation ul li a span {
+  margin: 10px;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
