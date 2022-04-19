@@ -53,13 +53,25 @@ header nav, header nav ul {
           align-items: center;
 }
 
-header .logo, header nav, .presentation {
+header .logo, header nav, .presentation, .plan {
   width: 1200px;
   margin: auto;
 }
 
 header nav ul {
   width: 600px;
+}
+
+.schema img {
+  width: 240px;
+}
+
+.structure-html .schema-html {
+  width: 420px;
+}
+
+.structure-html h2, .structure-html p, .plan-html {
+  width: 720px;
 }
 
 /* General */
@@ -109,11 +121,9 @@ header nav ul .deroulant:hover ul {
 }
 
 header nav ul .deroulant:hover ul li {
-  float: none;
   background-color: #333533;
-  width: 200px;
-  margin: 5px;
-  padding-left: 10px;
+  width: 170px;
+  padding: 15px;
 }
 
 header nav ul .deroulant ul {
@@ -141,7 +151,6 @@ header nav .connexion:hover {
 
 .presentation {
   padding: 50px 0 50px 0;
-  border-bottom: 1px solid grey;
 }
 
 .presentation .explication {
@@ -202,5 +211,87 @@ header nav .connexion:hover {
 .presentation .navigation ul li a span {
   margin: 10px;
   font-size: 1.5rem;
+}
+
+.detail {
+  padding: 50px 0 50px 0;
+  background-color: #EEE6D8;
+  border-top: 1px solid #333533;
+  border-bottom: 1px solid #333533;
+}
+
+.detail .detail-explication {
+  width: 1200px;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.detail .detail-explication p {
+  margin: 25px 0 0 0;
+}
+
+.plan {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+.structure-html .schema-html {
+  float: right;
+}
+
+.structure-html h2, .structure-html p {
+  text-align: justify;
+}
+
+.plan-html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.schema {
+  margin-bottom: 20px;
+}
+
+.schema h3 {
+  margin-bottom: 20px;
+}
+
+.schema p {
+  width: 456px;
+  font-size: 1.2rem;
+  margin-bottom: 17px;
+}
+
+.schema p code {
+  color: purple;
+}
+
+.schema p .class {
+  color: #f5cb5c;
+  background-color: #333533;
+}
+
+.header img, .footer img {
+  float: right;
+}
+
+.main img {
+  float: left;
+  margin-right: 24px;
+}
+
+.main p {
+  width: 720px;
 }
 /*# sourceMappingURL=style.css.map */

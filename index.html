@@ -60,14 +60,73 @@
         </section>
         <div class="detail">
             <article class="detail-explication">
-                <h2>Comment a été codé cette page web</h2>
+                <h2>COMMENT A ETE CREE CETTE PAGE WEB</h2>
                 <p>Pour chacune des pages du site, j'exposerais comment celle-ci a été codé, en décrivant chaque 
                     langages utilisé pour obtenir ce résultat. Différentes techniques de programmation seront utilisé 
                     en fonction du sujet abordé sur la page que vous consulter. (par exemple, une page expliquant 
                     l'utilisation de bootstrap sera codé et stylisé avec ce Framework.)
                 </p>
             </article>
-            <div class="detail-explication-page"></div>
+        </div>
+        <div class="detail-explication-page">
+            <div class="plan structure-html">
+                <aside><img src="images/structure.png" alt="schema de la page" class="schema-html"></aside>
+                <h2>LA STRUCTURE HTML</h2>
+                <p>Cette page est découpé en trois grande partie. Tout d'abord le <code>header</code>, représenté en 
+                    violet sur le schéma. Vient ensuite le <code>main</code> avec les parties oranges, vertes et rose, 
+                    puis le <code>footer</code> en bleu.</p>
+                <div class="plan-html">
+                    <div class="schema header">
+                        <h3>HEADER</h3>
+                        <a target="_blank" href="images/codeHeader.png">
+                            <img src="images/codeHeader.png" alt="header">
+                        </a>
+                        <p>Le header est composé d'une <code>div</code> de classe <code class="class">.logo</code> dans lequel on
+                        insère une <code>img</code> qui servira a afficher le logo du site.</p>
+                        <p>On crée ensuite une <code>nav</code> qui contient une liste <code>ul</code> pour afficher le
+                        menu. On insère un deuxieme <code>ul</code> dans le premier <code>li</code> 'Langages ▼' pour
+                        créer le menu déroulant. On place ensuite un lien <code>a</code> dans chaques <code>li</code> et on
+                        configure le tout en CSS.</p>
+                        <p>Un dernier <code>a</code> pour le bouton de connexion est créé en dehors de la liste 
+                            <code>ul</code> pour pouvoir le positionner a l'écart des autres boutons via CSS.</p>
+                    </div>
+                    <div class="schema main">
+                        <h3>MAIN</h3>
+                        <a target="_blank" href="images/codeMain.png">
+                            <img src="images/codeMain.png" alt="main">
+                        </a>
+                        <p>Pour le <code>main</code>, on commence par l'image de fond via une <code>div</code> dans
+                        lequel on insère une <code>img</code> préalablement modifié depuis Adobe XD. Cette image est
+                        statique, elle ne change pas.</p>
+                        <p>Le composant suivant est une <code>section</code> (partie orange) qui regroupe un <code>article</code> et une
+                        <code>div</code> contenant une liste <code>ul</code>. Les balises <code>section</code> et 
+                        <code>article</code> ont une valeur sémantique ici. La balise <code>div</code> quand à elle
+                        sera utiles avec CSS pour la mise en page de tout le composant <code>section</code>.</p>
+                        <p>Pour les parties vertes et roses, on procède de la même façon, avec une balise 
+                        <code>div</code> qui englobe le composant, et des <code>articles</code> ou <code>div</code>
+                        à l'intérieur pour chaques élements à stylisé avec le CSS. Le schéma que vous voyez sur la droite
+                        est enfermé dans une balise <code>aside</code>, la aussi pour un aspect sémantique. Il s'agit
+                        d'une image qui n'est pas indispensable au bon fonctionnement de l'article.</p>
+                        <p>Le fait de créer plusieurs bloc permet de faciliter la mise en page via CSS grâce à flexbox
+                        ou des framework comme Bootstrap etc...</p>
+                    </div>
+                    <div class="schema footer">
+                        <h3>FOOTER</h3>
+                        <a target="_blank" href="images/codeMain.png">
+                            <img src="images/codeMain.png" alt="main">
+                        </a>
+                        <p>Le <code>footer</code> n'est pas très garni, on crée simplement une liste <code>ul</code>
+                        qu'on modifiera en CSS pour afficher les contact. (REDACTION DE CE PARAGRAPHE EN COURS, 
+                        LA PHOTO EST A CHANGER)</p>
+                    </div>
+            </div>
+            <div class="plan stylisation-css"><h2>LA STYLISATION CSS/SASS</h2></div>
+            <div class="plan script-js">
+                <h2>LES SCRIPTS JAVASCRIPT</h2>
+                <p>Pas de javascript ici, il s'agit d'une page statique avec quelques effets css pour le style.</p>
+                <p>Certains élement de la page aurait pu être ecrit en JS, mais je montrerais les possibilités
+                    des scripts plus loin dans le site.</p>
+            </div>
         </div>
     </main>
     <footer></footer>
