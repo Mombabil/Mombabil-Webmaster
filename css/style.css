@@ -19,7 +19,7 @@ ul {
 /* FLux : */
 /* Tailles : */
 /* Typo : */
-header nav, header nav ul, .code .technologie {
+header nav, header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +213,6 @@ header nav .connexion:hover {
   padding: 50px 0 50px 0;
   background-color: #EEE6D8;
   border-top: 1px solid #333533;
-  border-bottom: 1px solid #333533;
 }
 
 .detail .detail-explication {
@@ -227,20 +226,41 @@ header nav .connexion:hover {
   margin: 25px 0 0 0;
 }
 
+.code {
+  background-color: #EEE6D8;
+}
+
 .code code {
   color: purple;
 }
 
 .code .technologie {
   text-align: center;
-  margin: 20px;
+  padding: 20px;
+}
+
+.code .technologie .but {
+  display: inline-block;
+  background-color: #333533;
+  border-radius: 10px;
+  border: 4px double #f5cb5c;
+  color: #f5cb5c;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.code .technologie .but:hover {
+  background-color: #333533;
+  border: 4px double #333533;
+  color: #f5cb5c;
 }
 
 .code .planPage {
-  height: 900px;
-  border: 1px solid black #333533;
-  background-color: #EEE6D8;
-  border-radius: 5px;
   font-size: 1rem;
 }
 
@@ -250,6 +270,11 @@ header nav .connexion:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.code #html .container {
+  overflow: scroll;
+  height: 900px;
 }
 
 .code #html aside {
@@ -321,6 +346,14 @@ header nav .connexion:hover {
 
 .code #html .main .bg {
   height: 60px;
+}
+
+.code #html .main .section {
+  height: 215px;
+}
+
+.code #html .main .article {
+  height: 140px;
 }
 
 .code #css {

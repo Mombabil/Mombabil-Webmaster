@@ -1,22 +1,39 @@
 .code
     @extend %center-component
+    background-color: $lightbeige
     code
         color: purple
     .technologie
         text-align: center
-        margin: 20px
-        @extend %flex-space-between
+        padding: 20px
+        .but
+            display: inline-block
+            background-color: $lightdark
+            border-radius: 10px
+            border: 4px double $yellow
+            color: $yellow
+            text-align: center
+            font-size: 1.2rem
+            padding: 2px
+            -webkit-transition: all 0.5s
+            -moz-transition: all 0.5s
+            -o-transition: all 0.5s
+            transition: all 0.5s
+            cursor: pointer
+            margin: 5px
+            &:hover
+                background-color: $lightdark
+                border: 4px double $lightdark
+                color: $yellow
     .planPage
-        height: 900px
-        border: 1px solid black $lightdark
-        background-color: $lightbeige
-        border-radius: 5px
         font-size: 1rem
     #html
         display: flex
         flex-wrap: wrap
         .container
             @extend %center-component
+            overflow: scroll
+            height: 900px
         aside
             display: flex
             flex-direction: column
@@ -59,6 +76,10 @@
         .main
             .bg
                 height: 60px
+            .section
+                height: 215px
+            .article
+                height: 140px
     #css
         background-color: red
     #js

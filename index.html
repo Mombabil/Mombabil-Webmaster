@@ -71,9 +71,9 @@
         <div class="code">
             <div class="technologie">
                 <h3>LES LANGAGES UTILISES POUR CETTE PAGE</h3>
-                <button id="but1">HTML</button>
-                <button id="but2">CSS</button>
-                <button id="but3">JAVASCRIPT</button>
+                <button id="but1" class="but">HTML</button>
+                <button id="but2" class="but">CSS</button>
+                <button id="but3" class="but">JAVASCRIPT</button>
             </div>
             <div id="html" class="planPage">
                 <div class="container">
@@ -123,12 +123,39 @@
                                 <figcaption>Cliquer pour agrandir</figcaption>
                             </figure>
                         </a>
-                        <p>Le composant suivant est une <code>section</code> qui regroupe un <code>article</code> et 
+                        <p class="section">Le composant suivant est une <code>section</code> qui regroupe un <code>article</code> et 
                         une <code>div</code>  de classe <code class="class">.navigation</code> contenant une liste 
                         <code>ul</code>. Les balises <code>section</code> et <code>article</code> ont une valeur 
                         sémantique ici. La balise <code>div</code> quand à elle sera utiles avec CSS pour la mise en 
                         page des liens en CSS.
                         </p>
+
+                        <a target="_blank" href="images/article.png">
+                            <figure>
+                                <img src="images/article.png" alt="main">
+                                <figcaption>Cliquer pour agrandir</figcaption>
+                            </figure>
+                        </a>
+                        <p class="article">Un composant contenant une <code>div</code> de classe 
+                        <code class="class">.detail</code> pour la mise en page CSS, avec
+                        à l'intérieur un <code>article</code> qui comprend lui même un titre <code>h2</code> et un
+                        paragraphe.
+                        </p>
+                        <a target="_blank" href="images/code.png">
+                            <figure>
+                                <img src="images/code.png" alt="main">
+                                <figcaption>Cliquer pour agrandir</figcaption>
+                            </figure>
+                        </a>
+                        <p class="js">Cette dernière <code>div</code> de classe <code class="class">.code</code> est un 
+                        peu particulière.</p>
+                        <p class="js">Elle contient une <code>div</code> de classe <code>.technologie</code> qui possède
+                        3 balises <code>button</code> qui seront utilisées dans un script Javascript pour les 
+                        <code>div</code> présentes a la suite de <code class="class">.technologie</code>.</p>
+                        <p class="js">Les balises <code>div</code> d'id <code class="id">#html</code>, <code>#css</code>
+                        et <code>#js</code>, et ayant toutes la classe <code class="class">.planPage</code> seront 
+                        affiché et visible sur le site uniquement lors du clic sur les boutons correspondants dans
+                        <code class="class">.technologie</code>.</p>
                     </div>
                 </div>
             </div>
