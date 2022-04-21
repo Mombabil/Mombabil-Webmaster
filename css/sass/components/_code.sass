@@ -1,0 +1,66 @@
+.code
+    @extend %center-component
+    code
+        color: purple
+    .technologie
+        text-align: center
+        margin: 20px
+        @extend %flex-space-between
+    .planPage
+        height: 900px
+        border: 1px solid black $lightdark
+        background-color: $lightbeige
+        border-radius: 5px
+        font-size: 1rem
+    #html
+        display: flex
+        flex-wrap: wrap
+        .container
+            @extend %center-component
+        aside
+            display: flex
+            flex-direction: column
+            @extend %width-20-ecran
+            float: left
+            margin-left: 15px
+            h2
+                font-size: 1.3rem
+            p, h2
+                margin-bottom: 20px
+                text-align: justify
+                padding: 5px
+            p
+                font-size: 1.3rem
+        .schema
+            @extend %width-75-ecran
+            margin-left: $ecran * 0.25
+            figure
+                margin-left: 50px
+                margin-right: 25px
+                &:hover
+                    box-shadow: 0px 0px 10px 0px #000000
+            figure, img
+                width: $ecran * 0.20
+                float: right
+            figcaption
+                text-align: center
+                font-size: 1rem
+                font-style: italic
+            p
+                margin-top: 25px
+                text-align: justify
+                .class
+                    background: $lightdark
+                    color: $yellow
+                    border-radius: 3px
+                    padding: 1px
+        .header
+            height: 300px
+        .main
+            .bg
+                height: 60px
+    #css
+        background-color: red
+    #js
+        background-color: green      
+
