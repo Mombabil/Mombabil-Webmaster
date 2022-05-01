@@ -28,7 +28,7 @@ header nav, header nav ul {
           justify-content: space-between;
 }
 
-.presentation .navigation ul li a {
+.presentation .navigation ul li a, footer .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,7 +53,7 @@ header nav, header nav ul {
           align-items: center;
 }
 
-header .logo, header nav, .presentation, .code, .code #html .container {
+header .logo, header nav, .presentation, .code, .code #html .container, .code #css .container, .code #js .container, footer .contact {
   width: 1200px;
   margin: auto;
 }
@@ -62,11 +62,11 @@ header nav ul {
   width: 600px;
 }
 
-.code #html aside {
+.code #html aside, .code #css aside, .code #js aside {
   width: 240px;
 }
 
-.code #html .schema {
+.code #html .schema, .code #css .schema, .code #js .schema {
   width: 900px;
 }
 
@@ -77,6 +77,92 @@ body {
 }
 
 /* Layout */
+@media screen and (max-width: 1201px) {
+  header {
+    width: 100%;
+  }
+  header .logo, header nav {
+    width: 800px;
+    margin: auto;
+  }
+  header nav ul {
+    width: 400px;
+  }
+  .presentation {
+    width: 800px;
+    margin: auto;
+  }
+  .detail .detail-explication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 800px;
+  }
+  .detail .detail-explication p, .detail .detail-explication h2 {
+    max-width: 800px;
+    margin: auto;
+  }
+  .code {
+    width: 800px;
+  }
+  .code #html aside {
+    width: 160px;
+  }
+  .code #html aside p, .code #html aside h2 {
+    width: 160px;
+  }
+  .code #html .schema {
+    width: 600px;
+    position: relative;
+    left: -100px;
+  }
+  .code #html .schema .text-header {
+    height: 500px;
+  }
+  .code #html .schema .text-header, .code #html .schema .text-main {
+    width: 45%;
+  }
+  .code #html .schema .first-main {
+    height: 200px;
+  }
+  .code #html .schema .first-main p {
+    margin-top: 20px;
+  }
+  .code #html .schema .first-main p:last-child {
+    margin-top: 60px;
+  }
+  .code #html .schema .second-main {
+    height: 220px;
+  }
+  .code #html .schema .third-main {
+    height: 150px;
+  }
+  .code #html .schema .fourth-main {
+    height: 330px;
+  }
+  .code #html .main {
+    margin-top: 60px;
+  }
+  .code #html .footer {
+    height: 130px;
+    margin-top: 80px;
+  }
+  footer .contact {
+    width: 800px;
+    margin: auto;
+  }
+}
+
 /* Components */
 header {
   background: #333533;
@@ -88,7 +174,7 @@ header .logo img {
 }
 
 header nav a {
-  color: #CFDBD5;
+  color: #EEE6D8;
 }
 
 header nav ul {
@@ -104,7 +190,7 @@ header nav ul li a:hover {
 }
 
 header nav ul .cv {
-  border-left: 1px solid #CFDBD5;
+  border-left: 1px solid #EEE6D8;
   padding-left: 25px;
 }
 
@@ -142,7 +228,7 @@ header nav .connexion:hover {
 }
 
 .index img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .presentation {
@@ -210,20 +296,23 @@ header nav .connexion:hover {
 }
 
 .detail {
-  padding: 50px 0 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #EEE6D8;
   border-top: 1px solid #333533;
+  width: 100%;
 }
 
 .detail .detail-explication {
   width: 1200px;
-  margin: auto;
   text-align: justify;
-  font-size: 1.5rem;
+  margin: auto;
 }
 
 .detail .detail-explication p {
-  margin: 25px 0 0 0;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  padding: 10px;
 }
 
 .code {
@@ -241,30 +330,32 @@ header nav .connexion:hover {
 
 .code .technologie .but {
   display: inline-block;
-  background-color: #333533;
   border-radius: 10px;
-  border: 4px double #f5cb5c;
-  color: #f5cb5c;
+  background-color: #EEE6D8;
+  border: none;
+  border-bottom: 1px solid #333533;
+  color: #333533;
   text-align: center;
   font-size: 1.2rem;
   padding: 2px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
 }
 
 .code .technologie .but:hover {
-  background-color: #333533;
-  border: 4px double #333533;
-  color: #f5cb5c;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: inset 0 -0.5em 0.5em #e6dbc6;
+          box-shadow: inset 0 -0.5em 0.5em #e6dbc6;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .code .planPage {
   font-size: 1rem;
 }
 
-.code #html {
+.code #html, .code #css, .code #js {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,12 +363,13 @@ header nav .connexion:hover {
       flex-wrap: wrap;
 }
 
-.code #html .container {
+.code #html .container, .code #css .container, .code #js .container {
   overflow: scroll;
   height: 900px;
+  padding: 0;
 }
 
-.code #html aside {
+.code #html aside, .code #css aside, .code #js aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,70 +381,74 @@ header nav .connexion:hover {
   margin-left: 15px;
 }
 
-.code #html aside h2 {
-  font-size: 1.3rem;
+.code #html aside h2, .code #css aside h2, .code #js aside h2 {
+  font-size: 1.2rem;
 }
 
-.code #html aside p, .code #html aside h2 {
+.code #html aside p, .code #html aside h2, .code #css aside p, .code #css aside h2, .code #js aside p, .code #js aside h2 {
   margin-bottom: 20px;
   text-align: justify;
+}
+
+.code #html aside p, .code #css aside p, .code #js aside p {
+  font-size: 1.3rem;
   padding: 5px;
 }
 
-.code #html aside p {
-  font-size: 1.3rem;
-}
-
-.code #html .schema {
+.code #html .schema, .code #css .schema, .code #js .schema {
   margin-left: 300px;
 }
 
-.code #html .schema figure {
+.code #html .schema figure, .code #css .schema figure, .code #js .schema figure {
   margin-left: 50px;
   margin-right: 25px;
 }
 
-.code #html .schema figure:hover {
+.code #html .schema figure:hover, .code #css .schema figure:hover, .code #js .schema figure:hover {
   -webkit-box-shadow: 0px 0px 10px 0px #000000;
           box-shadow: 0px 0px 10px 0px #000000;
 }
 
-.code #html .schema figure, .code #html .schema img {
+.code #html .schema figure, .code #html .schema img, .code #css .schema figure, .code #css .schema img, .code #js .schema figure, .code #js .schema img {
   width: 240px;
   float: right;
 }
 
-.code #html .schema figcaption {
+.code #html .schema figcaption, .code #css .schema figcaption, .code #js .schema figcaption {
   text-align: center;
   font-size: 1rem;
   font-style: italic;
 }
 
-.code #html .schema p {
+.code #html .schema p, .code #css .schema p, .code #js .schema p {
   margin-top: 25px;
   text-align: justify;
 }
 
-.code #html .schema p .class {
+.code #html .schema p .class, .code #css .schema p .class, .code #js .schema p .class {
   background: #333533;
   color: #f5cb5c;
   border-radius: 3px;
   padding: 1px;
 }
 
-.code #html .header {
-  height: 300px;
+.code #html .header, .code #css .header, .code #js .header {
+  height: 340px;
 }
 
-.code #html .main .bg {
+.code #html .main, .code #css .main, .code #js .main {
+  height: 950px;
+}
+
+.code #html .main .bg, .code #css .main .bg, .code #js .main .bg {
   height: 60px;
 }
 
-.code #html .main .section {
+.code #html .main .section, .code #css .main .section, .code #js .main .section {
   height: 215px;
 }
 
-.code #html .main .article {
+.code #html .main .article, .code #css .main .article, .code #js .main .article {
   height: 140px;
 }
 
@@ -362,5 +458,29 @@ header nav .connexion:hover {
 
 .code #js {
   background-color: green;
+}
+
+footer {
+  background-color: #333533;
+  height: 100px;
+}
+
+footer .contact {
+  height: 100px;
+}
+
+footer .contact .social {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #EEE6D8;
+}
+
+footer .contact .social img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,32 +8,30 @@
         padding: 20px
         .but
             display: inline-block
-            background-color: $lightdark
             border-radius: 10px
-            border: 4px double $yellow
-            color: $yellow
+            background-color: $lightbeige
+            border: none
+            border-bottom: 1px solid $lightdark
+            color: $lightdark
             text-align: center
             font-size: 1.2rem
             padding: 2px
-            -webkit-transition: all 0.5s
-            -moz-transition: all 0.5s
-            -o-transition: all 0.5s
-            transition: all 0.5s
             cursor: pointer
-            margin: 5px
+            margin: 2px
             &:hover
-                background-color: $lightdark
-                border: 4px double $lightdark
-                color: $yellow
+                transform: scale(1.1)
+                box-shadow: inset 0 -0.5em 0.5em darken($lightbeige, 5%)
+                transition: 0.1s ease-in-out
     .planPage
         font-size: 1rem
-    #html
+    #html, #css, #js
         display: flex
         flex-wrap: wrap
         .container
             @extend %center-component
             overflow: scroll
             height: 900px
+            padding: 0
         aside
             display: flex
             flex-direction: column
@@ -41,13 +39,13 @@
             float: left
             margin-left: 15px
             h2
-                font-size: 1.3rem
+                font-size: 1.2rem
             p, h2
                 margin-bottom: 20px
                 text-align: justify
-                padding: 5px
             p
                 font-size: 1.3rem
+                padding: 5px
         .schema
             @extend %width-75-ecran
             margin-left: $ecran * 0.25
@@ -72,8 +70,9 @@
                     border-radius: 3px
                     padding: 1px
         .header
-            height: 300px
+            height: 340px
         .main
+            height: 950px
             .bg
                 height: 60px
             .section

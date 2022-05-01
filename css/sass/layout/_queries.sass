@@ -1,0 +1,59 @@
+@media screen and(max-width: 1201px)
+    header
+        width: 100%
+        .logo, nav
+            width: $tablet
+            margin: auto
+        nav
+            ul // la liste fait la moitié de la taille du nav
+                width: $tablet / 2
+    .presentation
+        width: $tablet
+        margin: auto
+    .detail
+        .detail-explication
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            max-width: $tablet
+            p,h2
+                max-width: $tablet
+                margin: auto
+    .code
+        width: $tablet
+        #html
+            aside
+                width: $tablet * 0.20
+                p, h2
+                    width: $tablet * 0.20
+            .schema
+                width: $tablet * 0.75
+                position: relative
+                left: -100px
+                .text-header
+                    height: 500px
+                .text-header, .text-main
+                    width: 45%
+                .first-main
+                    height: 200px
+                    p
+                        margin-top: 20px
+                    p:last-child
+                        margin-top: 60px
+                .second-main
+                    height: 220px
+                .third-main
+                    height: 150px
+                .fourth-main
+                    height: 330px
+            .main
+                margin-top: 60px
+            .footer
+                height: 130px
+                margin-top: 80px
+    footer
+        .contact
+            width: $tablet
+            margin: auto    
+
