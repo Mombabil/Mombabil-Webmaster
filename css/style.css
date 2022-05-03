@@ -71,6 +71,10 @@ header nav ul {
 }
 
 /* General */
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: helvetica, sans sans-serif;
   background: #CFDBD5;
@@ -156,6 +160,9 @@ body {
   .code #html .footer {
     height: 130px;
     margin-top: 80px;
+  }
+  .code #css .style figure, .code #css .style img {
+    width: 400px;
   }
   footer .contact {
     width: 800px;
@@ -452,12 +459,73 @@ header nav .connexion:hover {
   height: 140px;
 }
 
-.code #css {
-  background-color: red;
+#css .container h2, #css .container h3 {
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 
-.code #js {
-  background-color: green;
+.style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.style figure {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.style figure, .style img {
+  width: 600px;
+}
+
+.style .style-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.style p {
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.flex .box {
+  background-color: #f5cb5c;
+  width: 306px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-right: 25px;
+}
+
+.flex .box:hover {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex .box .smallbox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.flex p {
+  margin-left: 25px;
+  margin-right: 350px;
+  margin-top: 20px;
+  text-align: justify;
 }
 
 footer {

@@ -179,7 +179,51 @@
             </div>
             <div id="css" class="planPage">
                 <div class="container">
-
+                    <h2>Le style CSS</h2>
+                    <h3>La charte graphique du site</h3>
+                    <div class="style css-block">
+                        <div class="style-figure">
+                                <figure class="palette">
+                                    <img src="images/palette.png" alt="palette">
+                                </figure>
+                                <figure class="charte">
+                                    <img src="images/charte.png" alt="charte">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>Pour commencer, il a fallu choisir la charte graphique du site, la police de caractères,
+                                les couleurs, les tailles de textes ...</p>
+                                <p>Pour cela, je me suis servi du site 
+                                    <a href="https://www.palettedecouleur.net/" style="font-weight: bold; color: purple;">palettedecouleur.net</a> 
+                                qui propose un large choix de palettes de couleurs différentes pour optimiser la clarté d'un site.
+                                </p>
+                                <p>Je n'est pas choisi de police de caractères spéciale, j'ai utilisé Helvetica, une des 
+                                polices par défaut.</p>
+                                <p>Pour les couleurs, j'ai choisie un assortiment de bleu et de noir pour les couleurs
+                                principales, ainsi que du beige et du jaune pour créer un contraste qui soit agréable à 
+                                l'oeil de l'utilisateur.
+                                </p>
+                                <p>Les tailles de caractères sont exprimées en <code>rem</code>, cela facilite l'intégration
+                                de media queries dans la page et rend le site plus facilement responsive. </p>
+                            </div>
+                    </div>
+                    <div class="flex css-block">
+                        <h3>La mise en page CSS</h3>
+                        <div class="box">
+                            <div class="smallbox firstbox"><p>1</p></div>
+                            <div class="smallbox secondbox"><p>2</p></div>
+                            <div class="smallbox thirdbox"><p>3</p></div>
+                        </div>
+                        <p>Toute la mise en page du site est faite avec flexbox, le module de boîtes flexibles de
+                        CSS. Grâce a des <code>div</code>, on crée des blocs de contenu que l'on positionne ensuite
+                        en ligne ou en colonne. <i>(Passer la souris sur l'image a droite pour voir la différence entre
+                        un flexbox en ligne ou en colonne)</i></p>
+                        <p>Une largeur de <code>1200px</code> est appliqué sur tout les composants <code>html</code> du
+                        site. Ils sont ensuite positionné au centre de la page avec un <code>margin: auto</code>.</p>
+                        <p>Lorsque l'on passe sur un écran plus petit, comme une tablette, la largeur passe à <code>800px</code>
+                        et les élements à l'intérieur s'ajustent automatiquement pour garder un design responsive. Ensuite, 
+                        quand on passe sur un écran de smartphone, la largeur change encore pour passer à <code>428px</code>.</p>
+                    </div>
                 </div>
             </div>
             <div id="js" class="planPage">
